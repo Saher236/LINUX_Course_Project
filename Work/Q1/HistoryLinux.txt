@@ -1,0 +1,77 @@
+ 1173  cd
+ 1174  clear
+ 1175  history >> LastHistory.txt
+ 1176  code .
+ 1177  git init
+ 1178  git config --global init.defaultBranch main
+ 1179  git init
+ 1180  git add .
+ 1181  status
+ 1182  git status
+ 1183  git commit -m 
+ 1184  git commit -m "Added initial Commit"
+ 1185  ls -la
+ 1186  git add .
+ 1187  git status
+ 1188  git commit -m "Initial commit - Added project structure"
+ 1189  wget -P DOWNLOADS https://github.com/Telhai/Git/LINUX_COURSE_WORK/archive/refs/tags/downloads.tar.gz
+ 1190  git config --global init.defaultBranch main
+ 1191  git init
+ 1192  git add .
+ 1193* 
+ 1194* 
+ 1195  wget -P DOWNLOADS https://github.com/Telhai/Git/LINUX_COURSE_WORK/archive/refs/tags/downloads.tar.gz
+ 1196  wget -O DOWNLOADS/download.tar.gz https://github.com/Telhai-Git/LINUX_COURSE_WORK/archive/refs/tags/downloads.tar.gz
+ 1197  tar -xzvf DOWNLOADS/download.tar.gz -C DOWNLOADS
+ 1198  git add .
+ 1199  git commit -m "Initial commit - Added Downloaded Files"
+ 1200* 
+ 1201  rm DOWNLOADS/download.tar.gz
+ 1202  git checkout -b BR_Q1
+ 1203  git branch
+ 1204* find DOWNLOADS -type f \( -name "*.py" -o -name "*.sh" \) -exec cp --parents {} CODE/ \;
+ 1205  find DOWNLOADS -type f \( -name "*.sh" -o -name "*.py" -o -name "*.cpp" -o -name "*.java" \) -exec cp {} CODE/ \;
+ 1206  find DOWNLOADS -type f \( -name "*.sh" \) -exec cp {} CODE/ \;
+ 1207  find DOWNLOADS -type f \( -name "*.csv" -o -name "*.jpg" -o -name "*.txt" \) -exec cp {} DATA/ \;
+ 1208  cd Work/Q1/q1_output.txt
+ 1209  echo "Time: $(date)" > Work/Q1/q1_output.txt
+ 1210  echo "USER DETAILS: $(grep "^$USER:" /etc/passwd)" >> Work/Q1/q1_output.txt
+ 1211  echo echo "REPO: $(pwd)" >> Work/Q1/q1_output.txt
+ 1212  echo "GithubUrl: <your-private-github-url>" >> Work/Q1/q1_output.txt
+ 1213  echo "VERSIONID: $(grep '^VERSION_ID=' /etc/os-release | cut -d '=' -f2)" >> Work/Q1/q1_output.txt
+ 1214  echo "GithubUrl: <https://github.com/Saher236?tab=repositories>" >> Work/Q1/q1_output.txt
+ 1215  echo "GithubUrl: <https://github.com/Saher236>" >> Work/Q1/q1_output.txt
+ 1216  echo "VERSIONID: $(grep '^VERSION_ID=' /etc/os-release | cut -d '=' -f2)" >> Work/Q1/q1_output.txt
+ 1217  echo "----------------------------------------------------------------------" >> Work/Q1/q1_output.txt
+ 1218  sudo apt install tree
+ 1219  tree LINUX_Course_Project >> Work/Q1/q1_output.txt 
+ 1220  chmod 777 LINUX_Course_Project 
+ 1221  sudo chmod -R 755 LINUX_Course_Project
+ 1222  sudo chmod -R 755 LINUX_COURSE_PROJECT
+ 1223  tree  >> Work/Q1/q1_output.txt 
+ 1224  echo "----------------------------------------------------------------------" >> Work/Q1/q1_output.txt
+ 1225  find ~ -name "*.sh" >> Work/Q1/q1_output.txt
+ 1226  find  -name "*.sh" >> Work/Q1/q1_output.txt
+ 1227  find ~ -name "*.sh" >> Work/Q1/q1_output.txt
+ 1228  echo "----------------------------------------------------------------------" >> Work/Q1/q1_output.txt
+ 1229  git checkout main
+ 1230  git branch
+ 1231  git checkout master
+ 1232  git merge BR_Q1
+ 1233  git commit -m "Merged BR_Q1 into master"
+ 1234  git remote add origin https://github.com/Saher236/LINUX_Course_Project.git
+ 1235  git branch -M main
+ 1236  git push -u origin main
+ 1237  git checkout main
+ 1238  git merge BR_Q1
+ 1239* git commit -m "Merged BR_Q1 into main"AKDsssscasdasasasslkksasa;d
+ 1240  git log --oneline > Work/Q1/git_commits.log
+ 1241*  git log --oneline
+ 1242* 
+ 1243  n
+ 1244  cat history 
+ 1245  history 
+ 1246  git log --oneline --graph --all
+ 1247  git log --oneline --graph --all > Work/Q1/git_commits.log 
+ 1248  history > LinuxHistory.txt
+ 1249  history > Work/Q1/HistoryLinux.txt
