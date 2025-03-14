@@ -1,0 +1,1000 @@
+  287  history >> History.txt
+  288  cd 
+  289  ls >> /Matala5/data2.txt
+  290  ls >> ./Matala5/data2.txt
+  291  ls ..>>data2.txt
+  292  cd Matala5
+  293  ls ..>>data2.txt
+  294  echo "OS Version:" $(lsb_release -d)
+  295  echo "OS Version:" $(lsb_release -d)>>data2.txt
+  296  ls ..>>data2.txt
+  297  echo "OS Version:" $(lsb_release -d)
+  298  history >> rami.txt
+  299  cd
+  300  mkdir Matala_2
+  301  code .
+  302  cd Matala_2
+  303  code . 
+  304  cat /etc/os-release
+  305  echo -e "VERSION:\n--------\n`cat/etc/os-release`"
+  306  cat /etc/os-release
+  307  echo -e "VERSION:\n--------\n`cat/etc/os-release`" >> os.log
+  308  echo -e "VERSION:\n--------\n`cat /etc/os-release`" >> os.log
+  309  echo -e "VERSION:\n--------\n`cat /etc/os-release`"
+  310  grep `"VERSION` /etc/os-release
+  311  grep `"VERSION` /etc/os-release"
+  312  grep `^VERSION` /etc/os-release
+  313  cat /etc/os-release | grep '^VERSION’
+  314  cat /etc/os-release | grep '^VERSION’
+  315  cat /etc/os-release | grep `^VERSION`
+  316  cat /etc/os-release | grep '^VERSION'
+  317  cat /etc/os-release | grep - '^VERSION'.
+  318  cat /etc/os-release | grep -E '(^VERSION|NAME)'
+  319  cat /etc/os-release | grep -E '(^PRETTY_NAME)' | cut -d "=" -f 2
+  320  cat /etc/os-release | grep -E '(^VERSION)' | cut -d "=" -f 2 
+  321  echo "------" >> os.log
+  322  cat /etc/os-release | grep -E '(^VERSION)' | cut -d "=" -f 2 >> os.log
+  323  cat /etc/os-release | grep -E '(^VERSION|NAME)'>> os.log
+  324  echo "------" >> os.log
+  325  cat /etc/os-release | grep -E '(^PRETTY_NAME)' | cut -d "=" -f 2 >> os.log
+  326  clear
+  327  cat > employees.csv << EOF 
+  328  cut -d "," -f2 employees.csv 
+  329  cut -d "," -f3,4 employees.csv 
+  330  echo "------" >> matala3.txt 
+  331  cut -d "," -f3,4 employees.csv >>matala3.txt 
+  332  grep "Engineering" employees.csv 
+  333  echo "------" >> matala3.txt 
+  334  grep "Engineering" employees.csv >>matala3.txt 
+  335  echo "------" >> matala3.txt 
+  336  cut -d',' -f2 employees.csv | tail -n +2
+  337  cut -d',' -f2 employees.csv
+  338  cut -d',' -f2 employees.csv | tail -n +2
+  339  echo "---1---" >> matala_3.txt 
+  340  cut -d',' -f2 employees.csv | tail -n +2 >> matala_3.txt 
+  341  echo "---2---" >> matala_3.txt 
+  342  cut -d',' -f2 employees.csv | tail -n +2 >> matala_3.txt 
+  343  echo "---2---" >> matala_3.txt 
+  344  cut -d',' -f2 employees.csv | tail -n +2 >> matala_3.txt 
+  345  echo "---3---" >> matala_3.txt 
+  346  cut -d',' -f2 employees.csv | tail -n +2 | sort
+  347  cut -d',' -f2 employees.csv | tail -n +2 | sort >> matala_3.txt 
+  348  echo "---4---" >> matala_3.txt 
+  349  grep "Engineering" employees.csv >>matala_3.txt 
+  350  echo "---5---" >> matala_3.txt 
+  351  cut -d',' -f3 employees.csv | sort | uniq -c 
+  352  cut -d',' -f3 employees.csv | sort | uniq -c >> matala_3.txt 
+  353  echo -e "-------\n" $(cut -d',' -f3 employees.csv | sort | uniq -c) "-------\n"
+  354  echo -e "-------\n" $(cut -d',' -f3 employees.csv | sort | uniq -c) "\n-------"
+  355  echo $(cut -d',' -f3 employees.csv | sort | uniq -c)
+  356  echo $(cut -d',' -f3 employees.csv | sort | uniq -c) >> matala_3.txt 
+  357  cut -d',' -f3 employees.csv | sort | uniq -c >> matala_3.txt 
+  358  echo "---6---" >> matala_3.txt 
+  359  sort -t',' k4  -n employees.csv 
+  360  sort -t',' k5  -n employees.csv 
+  361  sort -t',' -k4 -n employees.csv
+  362  sort -t',' -k4 -n employees.csv >> matala_3.txt 
+  363  echo "---7---" >> matala_3.txt 
+  364  sort -tr',' -k4 -n employees.csv
+  365  sort -rt',' -k4 -n employees.csv
+  366  sort -rt',' -k4 -n employees.csv >> matala_3.txt 
+  367  echo "---7---" >> matala_3.txt 
+  368  awk -F employees.csv 
+  369  awk -F '{sum+=$4} 'employees.csv 
+  370  awk -F',' 'NR>1 {sum += $4} END {print "Total Salary:", sum}' employees.csv 
+  371  awk -F',' 'NR>1 {sum := $4} END {print "Total Salary:", sum}' employees.csv 
+  372  awk -F',' 'NR>1 {sum \= $4} END {print "Total Salary:", sum}' employees.csv 
+  373  awk -F',' 'NR>1 {sum \\= $4} END {print "Total Salary:", sum}' employees.csv 
+  374  awk -F',' 'NR>1 {sum //= $4} END {print "Total Salary:", sum}' employees.csv 
+  375  awk -F',' 'NR>1 {sum += $4} END {print "Total Salary:", sum}' employees.csv >> matala_3.txt 
+  376  sort -rt',' -k4 -n employees.csv 
+  377  sort -rt',' -k4 -n employees.csv | head -n 1
+  378  sort -rt',' -k4 -n employees.csv | head -n 1 >> matala_3.txt 
+  379  echo "---8---" >> matala_3.txt 
+  380  sort -rt',' -k4 -n employees.csv | head -n 1 >> matala_3.txt 
+  381  echo "---8+---" >> matala_3.txt 
+  382  sed 's/HR/Human Resources/g' employees.csv > employees_V2.csv 
+  383  sort -t',' -k4 -n employees.csv | head -n 1
+  384  sort -t',' -k4 -n employees.csv | tail -n 1
+  385  sort -t',' -k4 -n employees.csv | tail -1
+  386  sed 's/HR/Human Resources/g' employees.csv
+  387  sed 's/HR/Human Resources/g' employees.csv >> matala_3.txt
+  388  history >> matala3_History.txt
+  389  cd
+  390  Code . 
+  391  ls
+  392  mkdir Matala
+  393  rm Matala
+  394  rm -f Matala
+  395  mkdir Matala_Files
+  396  cd Matala_Files/
+  397  Code .
+  398  touch a{1...5}
+  399  touch a{1..5}
+  400  mkdir A B C
+  401  touch b{3..4}
+  402  touch c5
+  403  cp c5 C/c5_copy
+  404  mkdir Orginal
+  405  mv a{1..2} b{3..4} c5 Orginal
+  406  mv Orginal Orginal_$(whoami)
+  407  ls
+  408  cp Orginal_`whoami`/a* A
+  409  cp Orginal_`whoami`/b* B
+  410  cp Orginal_`whoami`/c* C
+  411  cp -R . Backup_$(date +%Y)-$(date +%m)-$(date +%d)
+  412  ls
+  413  cp -R . ../Backup_$(date +%Y)-$(date +%m)-$(date +%d)
+  414  cd //
+  415  cd
+  416  cd ..
+  417  ls
+  418  cd
+  419  ls
+  420  cd Matala_Files/
+  421  rm -r A B C Orginal_root
+  422  history > history_$(date +%Y)-$(date +%m)-$(date +%d).log
+  423  history 30 > history_$(date +%Y)-$(date +%m)-$(date +%d).log
+  424  ls -R . >> history_$(date +%Y)-$(date +%m)-$(date +%d).log
+  425  ls -R . >> history_2024-11-29.log 
+  426  cat history_2024-11-29.log 
+  427  less history_2024-11-29.log 
+  428  clear
+  429  tar cvf BackupTar.tar ./*
+  430  clear
+  431  tar -tvf BackupTar.tar
+  432  clear
+  433  mv BackupTar.tar BackUp_Tar.tar
+  434  echo "----------------------------" >> history_2024-11-29.log 
+  435  tar -tvf BackUp_Tar.tar >> history_2024-11-29.log 
+  436  echo "----------------------------" >> history_2024-11-29.log 
+  437  tar -cvf backup2.tar.gz [!*.tar]
+  438  cat tar -tvf BackUp_Tar.tar
+  439  cat BackUp_Tar.tar
+  440  cat backup2.tar.gz
+  441  chmood 400 1.txt
+  442  chmod 400 1.txt
+  443  ls -l 1.txt
+  444  touch 1.txt
+  445  ls -l 1.txt
+  446  chmod 400 1.txt
+  447  ls -l 1.txt
+  448  rm -r [!*_Tar.tar]
+  449  shopt -s extglob
+  450  rm -r !(*_Tar.tar)
+  451  $(date) 
+  452  cat $(date+%Y) 
+  453  echo "Sample content" > $(date +%Y)
+  454  echo $(date +%Y)
+  455  echo $(date)
+  456  history 90 >> history_$(date + %Y)-$(date +%m)-$(date +%d)
+  457  history 90 >> history_$(date + %y)-$(date +%m)-$(date +%d)
+  458  history 90 >> history_$(date +%y)-$(date +%m)-$(date +%d)
+  459  history
+  460  history 80 > history_$(date +%y)-$(date +%m)-$(date +%d)
+  461  cd
+  462  cd .
+  463  mkdir DownloadFiles
+  464  Code .
+  465  cd DownloadFiles/
+  466  Code . 
+  467  wget -O pic1.jpeg https://picsum.photos/200/300?grayscale
+  468  wget -O pic2.jpg https://itequia.com/wp-content/uploads/2024/07/imagen.webp
+  469  wget -O pic3.jpeg https://picsum.photos/id/237/536/354
+  470  wget -O post.json https://jsonplaceholder.typicode.com/posts
+  471  ls
+  472  tar -czvf task3.tar.gz jquery-3.6.0.min.js pic1.jpeg pic2.jpeg pic3.jpeg posts.json
+  473  tar -czvf task3.tar.gz jquery-3.7.1.slim.js pic1.jpeg pic2.jpeg pic3.jpeg posts.json
+  474  tar -czvf task3.tar.gz jquery-3.7.1.slim.js pic1.jpeg pic2.jpg pic3.jpeg posts.json
+  475  tar -czvf task3.tar.gz jquery-3.7.1.slim.js pic1.jpeg pic2.jpg pic3.jpeg post.json
+  476  rm -f jquery-3.7.1.slim.js pic1.jpeg pic2.jpg pic3.jpeg post.json
+  477  tar -xvf BackupTar.tar
+  478  tar -xvf BackupTar.tar/Backup_2024-11-29
+  479  wget -O mypage.html https://www.google.com
+  480  tar -czvf "mypage_$(date +'%Y)-(date + %m)-(date + %d').tar.gz" myHTML.html
+  481  tar -czvf "myHTML_$(date +'%Y)-(date + %m)-(date + %d').tar.gz" myHTML.html
+  482  tar -czvf "mypage_$(date +'%Y)-(date + %m)-(date + %d').tar.gz" mypage.html
+  483  clear 
+  484  cat history 50
+  485  cat history
+  486  history
+  487  clear
+  488  history 50
+  489  clear
+  490  history >> histirys.txt
+  491  ls -R Backup_$(date +%Y)-$(date +%m)-$(date +%d) >> Backup_$(date +%Y)-$(date +%m)-$(date +%d)/task1_history.log
+  492  ls -R Backup_$(date +%Y)-$(date +%m)-$(date +%d) >> Backup_$(date +%Y)-$(date +%m)-$(date +%d).log
+  493  ls -d Backup_2024-11-29
+  494  ls -R Backup_$(date +%Y)-$(date +%m)-$(date +%d) >> Backup_$(date +%Y)-$(date +%m)-$(date +%d).log
+  495  ls -R Backup_2024-11-29 >> Backup_2024-11-29.log
+  496  history > Backup_2024-11-29.log
+  497  history 40 > Backup_2024-11-29.log
+  498  history 50 > Backup_2024-11-29.log
+  499  ls -R Backup_2024-11-29 >> Backup_2024-11-29.log
+  500  history 50 > Backup_2024-11-29.log
+  501  echo "-----------------------------" > Backup_2024-11-29.log
+  502  history 50 > Backup_2024-11-29.log
+  503  history 50 >> Backup_2024-11-29.log
+  504  history 50 > Backup_2024-11-29.log
+  505  echo "-----------------------------" >> Backup_2024-11-29.log
+  506  ls -R Backup_2024-11-29 >> Backup_2024-11-29.log
+  507  echo "-----------------------------" >> Backup_2024-11-29.log
+  508  tar -tvf BackUp_Tar.tar >> history_2024-11-29.log 
+  509  clear
+  510  cat Backup_2024-11-29.log
+  511  ls
+  512  history >> history2.txt
+  513  cd'
+  514  cd
+  515  ls
+  516  cd DownloadFiles/
+  517  cd
+  518  mkdir Downloads && cd Downloads
+  519  Code .
+  520  cd
+  521  ls
+  522  cd Backup_2024-11-29/
+  523  ls
+  524  Code . 
+  525  touch myscript1.sh
+  526  mv myscript1.sh script1.sh
+  527  chmod 755 script1.sh 
+  528  ./script1.sh 
+  529  ./myscript1.sh
+  530  cd
+  531  mkdir Scripts && cd Scripts
+  532  Code . 
+  533  cd
+  534  ls
+  535  cd DownloadFiles/
+  536  ls
+  537  Code .
+  538  cd
+  539  cd Downloads
+  540  ls
+  541  cd
+  542  cd Scripts/
+  543  ls
+  544  cd ls
+  545  cd
+  546  ;s
+  547  Code .
+  548  history > historytkt.txt
+  549  ls -la
+  550  wget https://jsonplaceholder.typicode.com/posts
+  551  mv posts posts.json
+  552  wget -O album_7.json https://jsonplaceholder.typicode.com/albums/7
+  553  mv Webite/ Website && cd Website
+  554  wget --mirror --convert-links --adjust-extension --page-requisites --no-parent http://example.com
+  555  cd
+  556  cd DownloadFiles/
+  557  cd Website/
+  558  cd ..
+  559  tar czvf downloadesFiles.tar.gz *
+  560  tar tvf
+  561  tar tvf downloadesFiles.tar.gz 
+  562  tar xvzf downloadesFiles.tar.gz 
+  563  rm -r [!*.tar.gz]
+  564  rm pic*
+  565  rm -r Website/
+  566  tar xvzf downloadesFiles.tar.gz 
+  567  sudo
+  568  cd ..
+  569  sudo apt update
+  570  apt list --upgradable
+  571  sudo apt update
+  572  apt list --upgradable
+  573  sudo apt update
+  574  sudo apt upgrade
+  575  sudo apt update && sudo apt upgrade -y
+  576  sudo apt list
+  577  echo "sudo apt list" >> APTLIST.txt
+  578  cat APTLIST.txt 
+  579   >> APTLIST.txt
+  580  cat APTLIST.txt 
+  581  sudo apt list >> APTLIST.txt 
+  582  dpkg --list
+  583  dpkg --list 'python*'
+  584  clear
+  585  apt show 
+  586  which -a touch
+  587  which curl
+  588  which vim
+  589  which python3
+  590  Code .
+  591  apt search figlet
+  592  which figlet
+  593  apt show figlet
+  594  figlet Linux
+  595  figlet Linux_DEV
+  596  which cowsay
+  597  apt search cowsay
+  598  cowsay 
+  599  apt search cowsay
+  600  which cowsay
+  601  sudo apt install cowsay
+  602  which cowsay
+  603  apt show cowsay
+  604  cowsay
+  605  cowsay "Hello"
+  606  cowsay -f dragon "I am a dragon!"
+  607  fortune | cowsay
+  608  brew install cowsay
+  609  sudo dnf install cowsay
+  610  cowsay -l
+  611  cowsay -f vader-koala "I am a vader-koala!"
+  612  cowsay -f elephant "I am a elephant!"
+  613  sudo apt install cmatrix
+  614  cmatrix
+  615  sudo apt install nnn
+  616  nnn
+  617  cmatrix
+  618  apt search 
+  619  apt search gnome-mpv
+  620  apt show gnom-mpv
+  621  apt show gnome-mpv
+  622  neofetch
+  623  sudo apt install nodejs
+  624  which nodejs
+  625  node -v
+  626  npm -v
+  627  mkdir NodeJsApp && cd NodeJsApp
+  628  cd ..
+  629  mv NodeJsApp/ App/NodeJs
+  630  mv -p NodeJsApp/ App/NodeJs
+  631  rm NodeJsApp/
+  632  mkdir -p Apps/NodesJS
+  633  cd Apps/NodesJS/
+  634  code.
+  635  code .
+  636  ls
+  637  cd DownloadFiles/
+  638  Code .
+  639  history 100 >> newONE.txt
+  640  cd //
+  641  cd 
+  642  history 100 >> newONE.txt
+  643  touch index.js
+  644  index.js
+  645  node index.js
+  646  apt sudo install express
+  647  install express
+  648  np install express
+  649  npm install express
+  650  node index.js
+  651  sudo lsof -i :5000
+  652  sudo kill -9 48945
+  653  node index.js
+  654  curl localhost:5000 > res_Client
+  655  node index.js
+  656  sudo kill -9 48945
+  657  sudo lsof -i :5000
+  658  sudo kill -9 51140
+  659  node index.js
+  660  curl localhost:5000 > res_Client.txt
+  661  curl localhost:3000 > res_Client.txt
+  662  node index.js
+  663  sudo lsof -i :3000
+  664  COMMAND   PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+  665  node    51234 root   27u  IPv6 572934      0t0  TCP *:3000 (LISTEN)
+  666  sudo kill -9 PID
+  667  sudo kill -9 48851
+  668  node index.js
+  669  curl localhost:3000 >> res
+  670  curl localhost:4000 >> res_Client
+  671  curl localhost:4444 >> res_Client_4444
+  672  curl localhost:4420 >> res_Client
+  673  sudo dpkg -i google-chrome-stable_current_amd64.deb
+  674  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  675  sudo dpkg -i google-chrome-stable_current_amd64.deb
+  676  sudo apt-get install -f
+  677  google-chrome-stable
+  678  sudo apt-get install -f
+  679  google-chrome-stable
+  680  google-chrome-stable --no-sandbox
+  681  touch installs.log
+  682  echo "----about Installing htop... $(date+%y)-(%m)-(%d)" >> installs.log
+  683  echo "----about Installing htop... $(date+%Y)-(%m)-(%d)" >> installs.log
+  684  echo "----about Installing htop... $(date "+%Y-%m-%d")" >> installs.log
+  685  echo "----updating Repo..." >> installs.log
+  686  echo "----htop installing details:" >> installs.log
+  687  dpkg-query -s htop >> installs.log
+  688  sudo apt-get install htop -y
+  689  htop --version
+  690  dpkg-query -s htop >> installs.log
+  691  echo "----htop installed version: $(htop --version)" >> installs.log
+  692  echo "htop installed directory: $(which htop)" >> installs.log
+  693  echo "----Running htop...+ $(date)" >> installs.log
+  694  htop
+  695  sudo apt-get install aha -y
+  696  htop -b | aha > htop.html
+  697  htop --version
+  698  sudo apt-get install aha
+  699  htop -b -n 1 | aha > htop.html
+  700  clear
+  701  cat history 50
+  702  history 50
+  703  CD
+  704  cd
+  705  .
+  706  ..
+  707  cd..
+  708  code .
+  709  mkdir Scripts && cd Scripts
+  710  mkdir Scripts
+  711  cd
+  712  mkdir Scripts
+  713  cd Scripts
+  714  code .
+  715  chmod 755 myscript1.sh 
+  716  ./myscript1.sh 
+  717  chmod 755 myscript1.sh 
+  718  ./myscript1.sh 
+  719  clear
+  720  chmod 755 myscript1.sh 
+  721  ./myscript1.sh 
+  722  touch script1.sh
+  723  chmod 755 script1.sh 
+  724  ./script1.sh 
+  725  chmod 755 myscript1.sh 
+  726  ./myscript1.sh 
+  727  mv script1.sh  myScript1.sh
+  728  chmod 755 myScript1.sh 
+  729  ./myScript1.sh 
+  730  chmod +x myScript1.sh 
+  731  ./myScript1.sh 
+  732  chmod +x myScript1.sh 
+  733  ./myScript1.sh 
+  734  chmod 755 myScript1.sh 
+  735  ./myScript1.sh 
+  736  chmod 755 myScript1.sh 
+  737  ./myScript1.sh 
+  738  chmod 755 myScript1.sh 
+  739  ./myScript1.sh 
+  740  ./myScript1.sh | grep 100
+  741  chmod 755 myScript1.sh 
+  742  ./myScript1.sh 
+  743  ./myScript1.sh | grep 100
+  744  ./myScript1.sh 
+  745  ./myScript1.sh >> outputscript.txt
+  746  ./myScript1.sh 
+  747  chmod 755 myScript1.sh 
+  748  ./myScript1.sh 
+  749  mv outputscript.txt outputscript
+  750  ./myScript1.sh 
+  751  touch a.sh
+  752  chmod 755 a.sh 
+  753  ./a.sh 
+  754  ./a.sh a b c
+  755  ./myScript1.sh 
+  756  ./myScript1.sh a b c 
+  757  chmod 755 myScript1.sh 
+  758  ./myScript1.sh a b c 
+  759  cd
+  760  ./Scripts/myScript1.sh a b c 
+  761  s
+  762  ./Scripts/myScript1.sh a b c 
+  763  cd Scripts/
+  764  touch myScript2.sh
+  765  chmod 755 myScript2.sh 
+  766  ./myScript2.sh 
+  767  ./myScript2.sh ./MyFolder
+  768  chmod 755 myScript2.sh 
+  769  ./myScript2.sh ./MyFolder
+  770  ./myScript2.sh MyFolder
+  771  chmod +x myScript2.sh 
+  772  ./myScript2.sh ./MyFolder
+  773  chmod +x myScript2.sh 
+  774  ./myScript2.sh ./MyFolder
+  775  clear
+  776  ./myScript2.sh ./MyFolder
+  777  ./myScript2.sh 
+  778  ./myScript2.sh ./MyFolder
+  779  ./myScript2.sh 
+  780  ./myScript2.sh ./MyFolder
+  781  clear
+  782  touch myScript3.sh
+  783  chmod +x myScript3.sh 
+  784  ./myScript3.sh 
+  785  ./myScript3.sh Work_Dir
+  786  touch myScript4.sh
+  787  chmod +x myScript4.sh 
+  788  ./myScript4.sh -f example.txt -c "test data....."
+  789  ./myScript4.sh -f example.txt  "test data....."
+  790  ./myScript4.sh -f example.txt -c "test data....."
+  791  ./myScript4.sh -f example.txt  "test data....."
+  792  ./myScript4.sh -f example.txt -c "test data....."
+  793  cd
+  794  ./Scripts/myScript4.sh -f example.txt -c "test data....."
+  795  cd Scripts/
+  796  ./myScript4.sh -f example.txt -c "test data....."
+  797  ./myScript4.sh -f example.txt -s "test data....."
+  798  ./myScript4.sh -f example.txt -c "test data....."
+  799  ls
+  800  ./myScript4.sh -f example.txt -c "test data....."
+  801  ./myScript94.sh -f example.txt -c "test data....."
+  802  ./myScript4.sh -f example.txt -c "test data....."
+  803  ./myScript4.sh -f example.txt -c "test data2....."
+  804  ./myScript4.sh -f e.txt -c "test data2....."
+  805  ./myScript4.sh -f eee.txt -c "test data2....."
+  806  ./myScript4.sh -f eeew.txt -c "test data2....."
+  807  ./myScript4.sh -f eas.txt -c "test data2....."
+  808  ./myScript4.sh -f deas.txt -c "test data2....."
+  809  ./myScript4.sh -f desas.txt -c "test data2....."
+  810  touch combine.sh
+  811  chmod +x combine.sh 
+  812  ./combine.sh 
+  813  ./combine.sh Scripts combined.txt
+  814  mkdir InputDir
+  815  cd InputDir/
+  816  echo "File1" >> file1.txt
+  817  echo "File2" >> file2.txt
+  818  echo "File3" >> file3.txt
+  819  echo "log1" >> log1.log
+  820  cd
+  821  cd Scripts/
+  822  ./combine.sh Scripts combined.txt
+  823  ./combine.sh InputDir/ combined.txt
+  824  touch updater.sh
+  825  ./myScript4.sh -f deas.txt -c "test data2....."
+  826  ./myScript4.sh -f deas.txt -c "test data4....."
+  827  clear
+  828  history >> historySCRTIPTS.txt
+  829  cd 
+  830  mkdir BashScripts
+  831  cd BashScripts/
+  832  coce .
+  833  code .
+  834  cd Scripts/
+  835  code .
+  836  ./combine.sh Scripts combined.txt
+  837  touch script1.sh
+  838  chmod 777 script1.sh 
+  839  ./script1.sh 
+  840  cd 
+  841  code .
+  842  cd BashScripts/
+  843  ./script1.sh 
+  844  1
+  845  ./script1.sh 
+  846  ls -la
+  847  chmod 777 script2_RunPython.sh 
+  848  ./script2_RunPython.sh 
+  849  ./script2_RunPython.sh py1.py
+  850  ./script2_RunPython.sh ./Python/py1.py
+  851  ./script2_RunPython.sh ./Python/app.py
+  852  python3 Python/app.py 
+  853  python3 Python/app.py xxx yyy
+  854  python3 Python/app.py xxx yyy
+  855  ./script3_RunPythonWithParams.sh --param1 XXX --param2 YYY
+  856  ./script3_RunPythonWithParams.sh --param1 XXX
+  857  ./script3_RunPythonWithParams.sh --param1 XXX --param2 YYY
+  858  ./script3_RunPythonWithParams.sh XXX YYY
+  859  ./script3_RunPythonWithParams.sh --param1 XXX --param2 YYY
+  860  clear
+  861  ./script3_RunPythonWithParams.sh --param1 XXX --param2 YYY
+  862  cd
+  863  cd Scripts/
+  864  code .
+  865  cd
+  866  cd BashScripts/
+  867  ./combine.sh InputDir/ combine.txt
+  868  ./combine.sh /InputDir/ combine.txt
+  869  ./combine.sh --param1 /InputDir/ --param2 combine.txt
+  870  ./script3_RunPythonWithParams.sh --param1 XXX --param2 YYY
+  871  ./script3_RunPythonWithParams.sh XXX YYY
+  872  ./combine.sh --param1 InputDir/ --param2 combine.txt
+  873  ./combine.sh --param1 InputDir --param2 combine.txt
+  874  ./combine.sh --param1 InputDir/ --param2 combine.txt
+  875  ./combine.sh InputDir/ combine.txt
+  876  ./combine.sh InputDir combine.txt
+  877  ./combine.sh --param1 InputDir --param2 combine.txt
+  878  clear
+  879  ./combine.sh --param1 InputDir/ --param2 combine.txt
+  880  historyCombine >> combineHistory.txt
+  881  history >> combineHistory.txt
+  882  ./combine.sh --param1 InputDir/ --param2 combine.txt
+  883  history 50 > combineHistory.txt 
+  884  chmod 777 updater.sh 
+  885  ./updater.sh update.txt "1.01" "2.02"
+  886  ./updater.sh zzzz.txt "1.01" "2.02"
+  887  ./updater.sh update.txt "1.01" "2.02"
+  888  history 20 >> updaterHistory.txt
+  889  chmod 777 updatenew.sh 
+  890  ./updatenew.sh update.txt "1.01" "2.02" "12/05/22" "15/03/23"
+  891  ./updater.sh update.txt "1.01" "2.02"
+  892  ./updatenew.sh update.txt "1.01" "2.02" "12/05/22" "15/03/23"
+  893  history 20 >> newupdateHistroy.txt
+  894  cd
+  895  mkdir BashScript2
+  896  cd BashScript2/
+  897  code .
+  898  touch script_1_iterateFiles.sh
+  899  chmod 777 script_1_iterateFiles.sh 
+  900  ./script_1_iterateFiles.sh 
+  901  mkdir Folder1
+  902  touch Folder1/f1.txt Folder1/f2.txt Folder1/f3.txt
+  903  ./script_1_iterateFiles.sh 
+  904  touch Folder1/f1.txt Folder1/f2.txt Folder1/f3.txt
+  905  mkdir Folder1
+  906  touch Folder1/f1.txt Folder1/f2.txt Folder1/f3.txt
+  907  ./script_1_iterateFiles.sh Folder1/
+  908  clear
+  909  chmod 777 script_2_Methods.sh 
+  910  ./script_2_Methods.sh 
+  911  chmod 777 script_2_Methods_Before.sh 
+  912  ./script_2_Methods_Before.sh 
+  913  ./script_2_Methods.sh 
+  914  ./script_2_Methods_Before.sh 
+  915  ./script_2_Methods.sh 
+  916  clear
+  917  chmod 777 script_3_Install.sh 
+  918  ./script_3_Install.sh cowsay
+  919  ./script_3_Install.sh jq
+  920  chmod +x script_3_Install.sh 
+  921  ./script_3_Install.sh jq
+  922  cleaR
+  923  clear
+  924  ./script_4_CSV.sh 
+  925  chmod +x script_4_CSV.sh 
+  926  ./script_4_CSV.sh 
+  927  ./script_4_CSV.sh
+  928  ./script_4_CSV.sh 
+  929  clear
+  930  cd
+  931  git --version
+  932  sudo apt update & sudo apt install git-all
+  933  git --version
+  934  git config --global user.name "SaherJam"
+  935  git config --global user.emai "Saher236.sj98@gmail.com"
+  936  git config --global user.name
+  937  git config --global user.email
+  938  git config --global user.email "Saher236.sj98@gmail.com"
+  939  git config --global user.email
+  940  git config --
+  941  git config
+  942  clear
+  943  code .
+  944  cat history 20
+  945  history 20
+  946  clear
+  947  git config 
+  948  git config user.name
+  949  git config user.email
+  950  git config --global color.ui auto
+  951  mkdir TestRepo_1
+  952  cd TestRepo_1/
+  953  git init 
+  954  ls -la
+  955  clear
+  956  ls -la
+  957  clear
+  958  touch 1.txt
+  959  touch 2.txt
+  960  ls
+  961  code . 
+  962  https://github.com/Saher236/TestRepo_1.git
+  963  git branch "TestBr_1"
+  964  git init 
+  965  git add 1.txt 
+  966  git commit -m "1.txt file first inserted to git history repo"
+  967  git add 2.txt 
+  968  git commit -m "2.txt file first inserted to git history repo"
+  969  git status -s
+  970  touch 3.txt
+  971  git status -s
+  972  echo "------File2.txt------" >> 2.txt 
+  973  cat 2.txt 
+  974  git status -s
+  975  git add 2.txt 
+  976  git status -s
+  977  git commit -m "2.txt updated"
+  978  git status -s
+  979  clear
+  980  ls
+  981  git status
+  982  git status -s
+  983  git add .
+  984  git status -s
+  985  git commit -m "3.txt"
+  986  git status -s
+  987  git status
+  988  git log
+  989  git log 2.txt 
+  990  git show
+  991  git show edd1a1c
+  992  git log --oneline
+  993  git log --oneline 2.txt 
+  994  git show 3af9b73
+  995  git show d4e88dd
+  996  git show 3af9b73:2.txt 
+  997  git show d4e88dd :2.txt 
+  998  git log
+  999  git log 2.txt 
+ 1000  git log --oneline 2.txt 
+ 1001  git status -s
+ 1002  git status
+ 1003  ls -la
+ 1004  git log --oneline
+ 1005  git checkout ab324de
+ 1006  git log --oneline
+ 1007  git checkout master
+ 1008  git status -s
+ 1009  git restore 1.txt 
+ 1010  touch 4.txt
+ 1011  git status 
+ 1012  git status -s
+ 1013  git add . 
+ 1014  git status -s
+ 1015  git commit -m "FIRST"
+ 1016  git commit -m "FIRST TIME ADDED"
+ 1017  git status -s
+ 1018  git dif --staged
+ 1019  cd
+ 1020  cd TestRepo_1/
+ 1021  git status
+ 1022  git restore --staged 4.txt 
+ 1023  git log 
+ 1024  clear
+ 1025  git add .
+ 1026  git commit -m "Create WebSite"
+ 1027  git add .
+ 1028  git commit -m "update js"
+ 1029  git status -s 
+ 1030  git remote add origin https://github.com/Saher236/TestRepo_1.git
+ 1031  git remote add origin https://github.com/Saher236/TestRepo_1
+ 1032  git remote -v
+ 1033  git push origin main 
+ 1034  git push origin main
+ 1035  git branch
+ 1036  git checkout -b main
+ 1037  git add .
+ 1038  git commit -m "Initial commit"
+ 1039  git add .
+ 1040  git commit -m "Initial commit"
+ 1041  git push -u origin main
+ 1042  git remote add origin https://github.com/Saher236/TestRepo_1.git
+ 1043  git branch -M main
+ 1044  git push -u origin main
+ 1045  git init 
+ 1046  git add README.md
+ 1047  cd WebSite/
+ 1048  git init
+ 1049  git add .
+ 1050  git commit -m "Initial commit for website"
+ 1051  git remote add origin https://github.com/Saher236/TestRepo_1.git
+ 1052  git push -u origin main
+ 1053  git branch -u master
+ 1054  git branch -M main
+ 1055  git push -u origin main
+ 1056  clear
+ 1057  cd
+ 1058  cd TestRepo_1/
+ 1059  git add .
+ 1060  git commit -m "update few Files before push"
+ 1061  git push
+ 1062  cd ..
+ 1063  mkdit cloneApp
+ 1064  mkdir cloneApp
+ 1065  cd cloneApp/
+ 1066  code .
+ 1067  git clone https://github.com/Saher236/TestRepo_1.git
+ 1068  git clone https://github.com/Saher236/TestRepo_1
+ 1069  cd cloneApp/ & code .
+ 1070  cd cloneApp/
+ 1071  code .
+ 1072  cd
+ 1073  mkdir GitHub HomeWork
+ 1074  mkdir GitHub_HomeWork
+ 1075  cd GitHub_HomeWork/
+ 1076  code 
+ 1077  code .
+ 1078  cd
+ 1079  code .
+ 1080  mkdir TesTTTTTTTTT
+ 1081  cd TesTTTTTTTTT/
+ 1082  code .
+ 1083  mkdir GITHUB_HW
+ 1084  cd GITHUB_HW/
+ 1085  code .
+ 1086  touch commit.sh
+ 1087  chmod 777 commit.sh
+ 1088  ./commit.sh 1000 
+ 1089  ./commit.sh 1000 "Added version README.md"
+ 1090  sudo apt install gnumeric
+ 1091  ./commit.sh 1000 "Added version README.md"
+ 1092  touch commit.sh
+ 1093  chmod 777 commit.sh 
+ 1094  ./commit.sh 1000 "Added initial version of README.md"
+ 1095  chmod 777 commit.sh 
+ 1096  ./commit.sh 1000 "Added initial version of README.md"
+ 1097  sudo apt-get install xlsx2csv
+ 1098  chmod 777 commit.sh 
+ 1099  ./commit.sh 1000 "Added initial version of README.md"
+ 1100  git status
+ 1101  git init
+ 1102  ./commit.sh 1000 "Added initial version of README.md"
+ 1103  pip3 install pandas openpyxl
+ 1104  apt install python3-pip
+ 1105  python3 -c "import pandas; print(pandas.__version__)"
+ 1106  pip3 install pandas openpyxl
+ 1107  ./commit.sh 1000 "Added initial versio README.md"
+ 1108  sudo apt-get install xlsx2csv
+ 1109  ./commit.sh 1000 "Added initial versio README.md"
+ 1110  git add .
+ 1111  status
+ 1112  git status
+ 1113  ./commit.sh 1000 "Added initial versio README.md"
+ 1114  ./commit.sh 1000 "Added version README.md"
+ 1115  git add .
+ 1116  ./commit.sh 1000 "Added version README.md"
+ 1117  touch test.sh
+ 1118  sudo apt-get install xlsx2csv
+ 1119  t
+ 1120  chmod 777 test.sh
+ 1121  ./test.sh tasks.xlsx 
+ 1122  ls -l tasks.xlsx 
+ 1123  ./commit.sh 1000 "Added version README.md"
+ 1124  git checkout BR_README
+ 1125  git checkout -b BR_README
+ 1126  git branch
+ 1127  git checkout -b BR_README main
+ 1128  ./commit.sh 1000 "Added version README.md"
+ 1129  git status
+ 1130  ./commit.sh 1000 "Added version README.md"
+ 1131  git checkout -b BR_README
+ 1132  ./commit.sh 1000 "Added version README.md"
+ 1133  git status
+ 1134  git add . 
+ 1135  git status
+ 1136  ./commit.sh 1000 "Added version README.md"
+ 1137  ./commit.sh 1000 "Added version BR_README.md"
+ 1138  history 50 >> gitHubHistory.txt
+ 1139  touch test.sh
+ 1140  chmod 777 test.sh 
+ 1141  chmod 777 tasks.xlsx 
+ 1142  ./test.sh tasks.xlsx 
+ 1143  sudo apt-get install xlsx2csv
+ 1144  xlsx2csv input.xlsx output.csv
+ 1145  ./test.sh tasks.xlsx 
+ 1146  brew update  
+ 1147  ./test.sh tasks.xlsx 
+ 1148  cd
+ 1149  mkdir repo1
+ 1150  cd repo1/
+ 1151  code .
+ 1152  git init
+ 1153  clear
+ 1154  touch file1.txt
+ 1155  git add .
+ 1156  git commit -m "insert new file - file1.txt"
+ 1157  git checkout -b "br_1"
+ 1158  git branch
+ 1159  git commit -m "update in br_1"
+ 1160  clear
+ 1161  git merge br_1
+ 1162  status -s
+ 1163  status
+ 1164  git status
+ 1165  git add file1.txt
+ 1166  git status
+ 1167  git commit -m "Merge Conflict"
+ 1168  git merge master
+ 1169  clear
+ 1170  cd
+ 1171  code .
+ 1172  ؤي
+ 1173  cd
+ 1174  clear
+ 1175  history >> LastHistory.txt
+ 1176  code .
+ 1177  git init
+ 1178  git config --global init.defaultBranch main
+ 1179  git init
+ 1180  git add .
+ 1181  status
+ 1182  git status
+ 1183  git commit -m 
+ 1184  git commit -m "Added initial Commit"
+ 1185  ls -la
+ 1186  git add .
+ 1187  git status
+ 1188  git commit -m "Initial commit - Added project structure"
+ 1189  wget -P DOWNLOADS https://github.com/Telhai/Git/LINUX_COURSE_WORK/archive/refs/tags/downloads.tar.gz
+ 1190  git config --global init.defaultBranch main
+ 1191  git init
+ 1192  git add .
+ 1193* 
+ 1194* 
+ 1195  wget -P DOWNLOADS https://github.com/Telhai/Git/LINUX_COURSE_WORK/archive/refs/tags/downloads.tar.gz
+ 1196  wget -O DOWNLOADS/download.tar.gz https://github.com/Telhai-Git/LINUX_COURSE_WORK/archive/refs/tags/downloads.tar.gz
+ 1197  tar -xzvf DOWNLOADS/download.tar.gz -C DOWNLOADS
+ 1198  git add .
+ 1199  git commit -m "Initial commit - Added Downloaded Files"
+ 1200* 
+ 1201  rm DOWNLOADS/download.tar.gz
+ 1202  git checkout -b BR_Q1
+ 1203  git branch
+ 1204* find DOWNLOADS -type f \( -name "*.py" -o -name "*.sh" \) -exec cp --parents {} CODE/ \;
+ 1205  find DOWNLOADS -type f \( -name "*.sh" -o -name "*.py" -o -name "*.cpp" -o -name "*.java" \) -exec cp {} CODE/ \;
+ 1206  find DOWNLOADS -type f \( -name "*.sh" \) -exec cp {} CODE/ \;
+ 1207  find DOWNLOADS -type f \( -name "*.csv" -o -name "*.jpg" -o -name "*.txt" \) -exec cp {} DATA/ \;
+ 1208  cd Work/Q1/q1_output.txt
+ 1209  echo "Time: $(date)" > Work/Q1/q1_output.txt
+ 1210  echo "USER DETAILS: $(grep "^$USER:" /etc/passwd)" >> Work/Q1/q1_output.txt
+ 1211  echo echo "REPO: $(pwd)" >> Work/Q1/q1_output.txt
+ 1212  echo "GithubUrl: <your-private-github-url>" >> Work/Q1/q1_output.txt
+ 1213  echo "VERSIONID: $(grep '^VERSION_ID=' /etc/os-release | cut -d '=' -f2)" >> Work/Q1/q1_output.txt
+ 1214  echo "GithubUrl: <https://github.com/Saher236?tab=repositories>" >> Work/Q1/q1_output.txt
+ 1215  echo "GithubUrl: <https://github.com/Saher236>" >> Work/Q1/q1_output.txt
+ 1216  echo "VERSIONID: $(grep '^VERSION_ID=' /etc/os-release | cut -d '=' -f2)" >> Work/Q1/q1_output.txt
+ 1217  echo "----------------------------------------------------------------------" >> Work/Q1/q1_output.txt
+ 1218  sudo apt install tree
+ 1219  tree LINUX_Course_Project >> Work/Q1/q1_output.txt 
+ 1220  chmod 777 LINUX_Course_Project 
+ 1221  sudo chmod -R 755 LINUX_Course_Project
+ 1222  sudo chmod -R 755 LINUX_COURSE_PROJECT
+ 1223  tree  >> Work/Q1/q1_output.txt 
+ 1224  echo "----------------------------------------------------------------------" >> Work/Q1/q1_output.txt
+ 1225  find ~ -name "*.sh" >> Work/Q1/q1_output.txt
+ 1226  find  -name "*.sh" >> Work/Q1/q1_output.txt
+ 1227  find ~ -name "*.sh" >> Work/Q1/q1_output.txt
+ 1228  echo "----------------------------------------------------------------------" >> Work/Q1/q1_output.txt
+ 1229  git checkout main
+ 1230  git branch
+ 1231  git checkout master
+ 1232  git merge BR_Q1
+ 1233  git commit -m "Merged BR_Q1 into master"
+ 1234  git remote add origin https://github.com/Saher236/LINUX_Course_Project.git
+ 1235  git branch -M main
+ 1236  git push -u origin main
+ 1237  git checkout main
+ 1238  git merge BR_Q1
+ 1239* git commit -m "Merged BR_Q1 into main"AKDsssscasdasasasslkksasa;d
+ 1240  git log --oneline > Work/Q1/git_commits.log
+ 1241*  git log --oneline
+ 1242* 
+ 1243  n
+ 1244  cat history 
+ 1245  history 
+ 1246  git log --oneline --graph --all
+ 1247  git log --oneline --graph --all > Work/Q1/git_commits.log 
+ 1248  history > LinuxHistory.txt
+ 1249  history > Work/Q1/HistoryLinux.txt
+ 1250  git push origin main
+ 1251  git push origin BR_Q1
+ 1252  git status
+ 1253  git push origin main
+ 1254  git push origin BR_Q1
+ 1255  clear
+ 1256  git checkout -b BR_Q2
+ 1257  cp CODE/plant.py Work/Q2
+ 1258  pip install matplotlib numpy
+ 1259  sudo apt update
+ 1260  sudo apt install python3-matplotlib python3-numpy
+ 1261  python3 Work/Q2/plant.py
+ 1262  mv *.png Work/Q2/Diagrams_1/
+ 1263  mkdir -p Work/Q2/Diagrams_1
+ 1264  mv *.png Work/Q2/Diagrams_1/
+ 1265  tar -czvf BACKUPS/Diagrams_1_$(date +%Y-%m-%d).tar.gz -C Work/Q2 Diagrams_1
+ 1266  git add .
+ 1267  git commit -m "Added plant.py and Diagram_1"
+ 1268  git checkout main
+ 1269  git merge BR_Q2
+ 1270  git push origin main
+ 1271  git push origin BR_Q2
+ 1272  mkdir Work/Q2/requirements.txt
+ 1273  rm Work/Q2/requirements.txt/
+ 1274  rf Work/Q2/requirements.txt/
+ 1275  touch Work/Q2/plant_plots
+ 1276  touch Work/Q2/plant_plots.py
+ 1277  echo "matplotlib" > Work/Q2/requirements.txt
+ 1278  echo "argparse" >> Work/Q2/requirements.txt
+ 1279  pip install -r Work/Q2/requirements.txt
+ 1280  pip install -r Work/Q2/requirements.txt 
+ 1281  python3 Work/Q2/plant_plots.py --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.2 2.5 2.7 3.0
+ 1282  python3 Work/Q2/plant_plots.py --plant "Rose" --height 30 35 40 45 50 --leaf_count 25 30 35 40 45 --dry_weight 2.0 2.2 2.5 2.7 3.0
+ 1283  mkdir -p Work/Q2/Diagrams_2
+ 1284  mv *.png Work/Q2/Diagrams_2/
+ 1285  tar -czvf BACKUPS/Diagrams_2_$(date +%Y-%m-%d).tar.gz -C Work/Q2 Diagrams_2
+ 1286  history > Work/Q2/linux_history_q2.log
