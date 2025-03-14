@@ -1,7 +1,6 @@
 import argparse
 import matplotlib.pyplot as plt
 
-HEAD
 # Setting the parameters to be received from the terminal
 parser = argparse.ArgumentParser(description="Generate plant growth plots.")
 parser.add_argument("--plant", type=str, required=True, help="Plant name")
@@ -30,11 +29,7 @@ plt.grid(True)
 plt.savefig(f"{plant}_scatter.png")
 plt.close()
 
-<<<<<<< HEAD
-#Create History Graph
-=======
 #Creating a History Graph
->>>>>>> BR_Q3
 plt.figure(figsize=(10, 6))
 plt.hist(dry_weight_data, bins=5, color='g', edgecolor='black')
 plt.title(f'Histogram of Dry Weight for {plant}')
