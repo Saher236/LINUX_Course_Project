@@ -1,0 +1,19 @@
+ 1628  git checkout -b BR_Q5
+ 1629  cd Work/Q5
+ 1630  mkdir Work/Q5
+ 1631  cd Work/Q5
+ 1632  git branch
+ 1633  docker build -t plant-analyzer Work/Q5/ 
+ 1634  git branch
+ 1635  cd Work/Q5
+ 1636  docker run -it --name diagram_container ubuntu bash
+ 1637  docker cp ../Q2/plant.py diagram_container:/plant.py
+ 1638  docker run -it --name diagram_container ubuntu bash
+ 1639  docker start -ai diagram_container
+ 1640  docker cp diagram_container:/merged.png .
+ 1641  docker cp diagram_container:/reversed_merged.png .
+ 1642  docker cp diagram_container:/docker_history.log .
+ 1643  tar -czvf diagrams_backup.tar.gz *.png docker_history.log
+ 1644  docker cp diagram_container:/diagrams_backup.tar.gz .
+ 1645  ls -lh /
+ 1646  history > LINUX_HISTORY_5.txt

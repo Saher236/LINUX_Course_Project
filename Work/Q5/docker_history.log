@@ -1,0 +1,13 @@
+    1  apt update && apt install nano -y
+    2  docker cp ../Q2/plant.py diagram_container:/plant.py
+    3  ls -l /plant.py
+    4  apt install python3-pip -y
+    5  python3 /plant.py
+    6  apt update && apt install -y python3-pip
+    7  pip3 install matplotlib numpy
+    8  apt install -y python3-matplotlib python3-numpy
+    9  python3 /plant.py
+   10  ls *.png
+   11  apt install imagemagick -y
+   12  convert *.png +append merged.png
+   13  history > docker_history.log
