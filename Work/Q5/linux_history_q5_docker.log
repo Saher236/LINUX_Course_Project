@@ -1,0 +1,8 @@
+ 1712  git checkout -b BR_Q5_B
+ 1713  cd ..
+ 1714  mkdir output
+ 1715  docker build -t plant_plotter .
+ 1716  docker run -v "$(pwd)/output:/app/output" --name plant_container plant_plotter --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.2 2.5 2.7 3.0
+ 1717  docker cp $(docker create plant_plotter)://app/output/. output/
+ 1718  history > Work/Q5/linux_history_q5_docker.log
+ 1719  history > linux_history_q5_docker.log
