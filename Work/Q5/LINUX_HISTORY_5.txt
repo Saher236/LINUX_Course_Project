@@ -17,3 +17,22 @@
  1644  docker cp diagram_container:/diagrams_backup.tar.gz .
  1645  ls -lh /
  1646  history > LINUX_HISTORY_5.txt
+ 1647  docker run --rm -it --entrypoint /bin/bash plant_plotter
+ 1648  python3 /app/plant_plots.py --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.2 2.5 2.7 3.0
+ 1649  docker run --rm -it --entrypoint /bin/bash plant_plot
+ 1650  docker run -it --name python_plots_container python_plots
+ 1651  docker run --rm -it --entrypoint /bin/bash plant_plotter
+ 1652  docker cp $(docker create plant_plotter)://app/output/. output/
+ 1653  CONTAINER_ID=$(docker run -d plant_plotter)
+ 1654  docker cp $CONTAINER_ID:/app/output/. output/
+ 1655  docker stop $CONTAINER_ID && docker rm $CONTAINER_ID
+ 1656  ls -a output/
+ 1657  docker ps -a
+ 1658  docker exec -it plant_plotter ls -l /app/output
+ 1659  docker start hopeful_cohen
+ 1660  docker exec -it hopeful_cohen ls -l /app/output
+ 1661  docker logs hopeful_cohen
+ 1662  docker create --name temp_container plant_plotter
+ 1663  docker cp temp_container:/app/output/. output/
+ 1664  docker rm temp_container
+ 1665  history >> LINUX_HISTORY_5.txt

@@ -1,0 +1,48 @@
+ 1824  git branch
+ 1825  git checkout BR_Q5_JAVA
+ 1826  cd Work/Q5/JavaDocker
+ 1827  cd DockerJAVA
+ 1828  docker build -t java_watermark .
+ 1829  docker run --rm -v "$(pwd)/output:/app/output" -v "$(pwd)/students.txt:/app/students.txt" java_watermark output students.txt
+ 1830  docker run --rm -v "$(pwd)/output:/app" -v "$(pwd)/students.txt:/app/students.txt" java_watermark output students.txt
+ 1831  docker run --rm -v "$(pwd)/output:/app/output" -v "$(pwd)/students.txt:/app/students.txt" java_watermark output students.txt
+ 1832  docker run --rm -v "$(pwd)/output:/app/output" -v "$(pwd)/students.txt:/app/students.txt" java_watermark /app/output /app/students.txt
+ 1833  ls -l Work/Q5/DockerJAVA/output
+ 1834  ls -l output
+ 1835  docker run --rm -v "$(pwd)/output:/app/output" -v "$(pwd)/students.txt:/app/students.txt" java_watermark /app/output /app/students.txt
+ 1836  docker build -t java_watermark .
+ 1837  docker run --rm -v "$(pwd)/output:/app/output" -v "$(pwd)/students.txt:/app/students.txt" java_watermark /app/output /app/students.txt
+ 1838  docker build -t java_watermark .
+ 1839  docker run --rm -v "app:/app/output" -v "/students.txt:/app/students.txt" java_watermark /app/output /app/students.txt
+ 1840  docker run --rm -v "$(pwd)/output:/app/output" -v "$(pwd)/students.txt:/app/students.txt" java_watermark /app/output /app/students.txt
+ 1841  touch run_containers.sh
+ 1842  chmod +x Work/Q5/run_containers.sh
+ 1843  chmod +x run_containers.sh
+ 1844  ./run_containers.sh 
+ 1845  chmod +x run_containers.sh
+ 1846  ./run_containers.sh 
+ 1847  docker run --rm -v "$(pwd)/output:/app/output" java_watermark output "John Doe - ID: 123456789"
+ 1848  cd ..
+ 1849  docker build -t plant_plotter .
+ 1850  pip install --upgrade pip
+ 1851  cd JavaDocker
+ 1852  cd DockerJAVA/
+ 1853  docker build -t java_watermark .
+ 1854  docker run --rm -v "$(pwd)/output:/app/output" plant_plotter --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.2 2.5 2.7 3.0
+ 1855  chmod +x run_containers.sh
+ 1856  ./run_containers.sh 
+ 1857  docker run --rm -it -v "$(pwd)/output:/app/output" java_watermark bash
+ 1858  docker build -t java_watermark .
+ 1859  docker images | grep java_watermark
+ 1860  docker run --rm -it -v "$(pwd)/output:/app/output" java_watermark bash
+ 1861  docker build -t java_watermark Work/Q5/DockerJAVA
+ 1862  docker build -t java_watermark
+ 1863  docker build -t java_watermark .
+ 1864  docker run --rm -v "$(pwd)/output:/app/output" -v "$(pwd)/students.txt:/app/students.txt" java_watermark output /app/students.txt
+ 1865  docker build -t java_watermark .
+ 1866  docker run --rm -v "$(pwd)/output:/app/output" -v "$(pwd)/students.txt:/app/students.txt" java_watermark output /app/students.txt
+ 1867  cd ..
+ 1868  docker run --rm -v "$(pwd)/output:/app/output" -v "$(pwd)/students.txt:/app/students.txt" java_watermark output /app/students.txt
+ 1869  cd Work/Q5
+ 1870  docker run --rm -v "$(pwd)/output:/app/output" -v "$(pwd)/students.txt:/app/students.txt" java_watermark output /app/students.txt
+ 1871  history > DockerJAVA/linux_history_q5_java.log
